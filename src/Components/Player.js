@@ -16,8 +16,7 @@ function Player() {
 
   FetchSetData();
   function FetchSetData() {
-      let LINK = "/api/v2/getTrailerList";
-    fetch(LINK)
+    fetch("/api/v2/getTrailerList")
       .then((res) => res.json())
       .then((res) => {
         //   console.log(res.data);

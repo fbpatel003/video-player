@@ -17,7 +17,7 @@ function Player() {
   FetchSetData();
 
   function FetchSetData() {
-    fetch("https://api-uat.greatmanagerinstitute.com/api/v2/getTrailerList")
+    fetch("/api/v2/getTrailerList")
       .then((res) => res.json())
       .then((res) => {
         //   console.log(res.data);
